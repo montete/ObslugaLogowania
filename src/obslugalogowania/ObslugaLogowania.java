@@ -18,7 +18,7 @@ public class ObslugaLogowania {
         String passwd ="asd123";
 
         Logowanie zaloguj = new Logowanie(login,passwd);
-        IDaneLogowania.przekazDane();
+        //IDaneLogowania.przekazDane();
         
        
         
