@@ -9,12 +9,18 @@ public class DataValidator {
     
     private XDaneLogowania DaneDoWalidacji;
     private boolean validated;
-    
+    private String[] notAllowed = {"!","@","#","$","%","^","&","*","(",")"};
     public DataValidator(XDaneLogowania dane){
-        this.validated = true;
+        for(String v : notAllowed){
+            if(dane.getLogin().contains(v)) {this.validated = false; break; }
+            else if(dane.getPassword().contains(v)) {this.validated = false; break;}
+            else this.validated = true;
+        }
+
                     
     }
     public DataValidator(){
+
         this.validated = false;
     }
 

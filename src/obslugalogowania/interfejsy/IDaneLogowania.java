@@ -11,7 +11,8 @@ import obslugalogowania.xklasy.XDaneLogowania;
  * @author Mon
  */
 public interface IDaneLogowania {
-    
-       public XDaneLogowania przekazDane(XDaneLogowania Dane);
-       
+
+       XDaneLogowania przekazDane();
+
+
 }

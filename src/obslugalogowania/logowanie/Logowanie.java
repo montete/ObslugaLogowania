@@ -28,8 +28,8 @@ public class Logowanie implements IDaneLogowania, ILogowanie {
     }
 
     @Override
-    public XDaneLogowania przekazDane(XDaneLogowania Dane) {
-        XDaneLogowania przenosimy = this.Dane;
+    public XDaneLogowania przekazDane() {
+        XDaneLogowania przenosimy = this.getDane();
         return przenosimy;
     }
 
